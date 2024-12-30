@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="FR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>bts ibno sina</title>
+  </head>
+  <body>
+
+    <nav>
+
+      <img src="TOF/logo.jpeg" alt="bts logo">
+
+      <ul>
+
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="#Inscruption"> inscruption</a></li>
+        <li><a href="#Filiere">Filiere</a></li>
+
+      </ul>
+
+      <a href="#LOGIN" class="header_login">Login</a>
+
+    </nav>
+    <main>
+      <div class="txt_principale">
+        <p>LECCE TECHNIQUE IBNO SINA</p>
+        <h1>BOOSTEZ VOTRE AVENIR !!</h1>
+        <ol> <li>Acquérir des compétences dans des domaines pointus en fonction
+            de la spécialisation choisie.</li>
+
+          <li>Poursuivre des études en (Licence, Master, grandes écoles de
+            commerce et grandes écoles d’ingénieurs…) au Maroc et à
+            l’étranger.</li>
+
+        </ol>
+
+      </p>
+      <button type="button" value="inscruption">inscruption</button></a>
+  </div>
+
+  <div class="image_principale">
+
+    <img src="TOF/2020-2050-marty.jpg" alt="image_principale">
+  </div>
+
+</main>
+
+<div class="partie_Filiere">
+
+  <h2 id="Filiere"> les Filieres BTS en ibn sina</h2>
+
+  <div class="Filiere">
+    <div>
+      <img src="TOF/examens-dsi-bts-maroc.png">
+
+      <h3>DSI</h3>
+      <p>Développement de Systèmes d’Information</p>
+    </div>
+
+    <div>
+      <img src="TOF/se.jpg" alt="SE">
+      <h3>SE</h3>
+      <p>SYSTEM ELECTRONICS</p>
+    </div>
+
+    <div>
+      <img src="TOF/cpi.jpg" alt="cpi">
+      <h3>CPI</h3>
+      <p>Conception du Produit Industriel
+      </p>
+    </div>
+
+    <div>
+      <img src="TOF/pme.jpg" alt="PME/PMI">
+      <h3>PME/PMI</h3>
+      <p>Gestion des Petites et Moyennes Entreprises<br>
+        et des Petites et Moyennes Industries</p>
+    </div>
+
+    <div>
+      <img src="TOF/mi.jpg" alt="MI">
+      <h3>MI</h3>
+      <p>Maintenance Industrielle</p>
+    </div>
+
+  </div>
+
+</div>
+<div class="container" id="Inscruption">
+
+  <form action="userAdd.php" method="POST" enctype="multipart/form-data"
+    onsubmit="return verifierMotDePasse();">
+    <h1><em>Inscruption BTS</em> </h1>
+    <ul>
+      <li>
+        <label for="nom">Nom:</label>
+        <input type="text" name="nom" placeholder="entrer le nom..." required>
+      </li>
+      <li>
+        <label for="prenom">Prénom:</label>
+        <input type="text" name="prenom" placeholder="entrer le prenom..."
+          required>
+      </li>
+      <li>
+        Date de naissance:
+        <input type="date" name="ddn" placeholder="jj/mm/aaaa">
+      </li>
+      <li>
+        <label for="email">Email:</label>
+        <input type="email" name="email">
+      </li>
+      <li>
+        <label for="sexe">Sexe:</label>
+        <span class="sexe">
+          <label> homme: <input type="radio" name="sexe" checked value="M"
+              required></label>
+          <label> femme:<input type="radio" name="sexe" value="F"></label>
+        </span>
+      </li>
+      <label>Filiere:</label>
+      <li>
+        <select name="filiere" id="filier">
+          <option class="options" value="dsi">Développement des Systèmes
+            d’Information</option>
+          <option class="options" value="SE">Systèmes Electroniques</option>
+          <option class="options" value="CPI">Conception du Produit
+            Industriel</option>
+          <option class="options" value="PME">PME.PMI</option>
+        </select>
+      </li>
+      <li>
+
+        <label>Intérêts :</label><br>
+        <input type="checkbox" name="interets[]" value="sport"> Sport
+        <input type="checkbox" name="interets[]" value="musique"> Musique
+        <input type="checkbox" name="interets[]" value="lecture"> Lecture
+
+      </li>
+      <li>
+        Adresse Email:
+        <input type="text" name="email"> </li>
+      <li>
+        <li>
+          Adresse :
+          <input type="text" name="adresse"
+            placeholder="entrer votre adresse..."> </li>
+        <li>
+          <label for="password">Mot de passe:</label>
+          <input type="password" name="password"
+            placeholder="entrer password..." required>
+        </li>
+        <li>
+          <label for="confirm_password">Confirmer:</label>
+          <input type="password" name="confirmPassword"
+            placeholder="entrer password ...">
+        </li>
+        <li> <label for="photo"> <input name="photo" type="file"> image de
+            profile </label> </li>
+        <li>
+
+          <li>
+            <input class="valider" type="submit" value="Envoyer">
+            <input class="valider" type="reset" value="Réinitialiser">
+          </li>
+        </ul>
+
+      </form>
+    </div>
+
+    <div id="LOGIN">
+      <form class="LOGIN" action="confermation.txt" method="get"
+        enctype="multipart/form-data">
+        <div class="container">
+          <div class="sous_containner">
+            <div> <h1>LOGIN</h1></div>
+            <div><input class="input1" type="email" name="email"
+                placeholder="     email@gmail.com" required></div>
+            <div><input class="input1" type="password" name="password"
+                placeholder="  password*******" required> </div>
+            <div><input type="checkbox" name="enr_ins"><label> Remmeber
+                me</label></div>
+            <div><input class="button_login" type="submit" value="LOGIN">
+            </div>
+          </div>
+        </div>
+      </form>
+
+    </div>
+    
+
+    <script>
+  function verifierMotDePasse() {
+     
+      const password = document.querySelector('input[name="password"]').value;
+      const confirmPassword = document.querySelector('input[name="confirmPassword"]').value;
+
+      if (password === confirmPassword) {
+          return true;
+      } else {
+          alert("Les mots de passe ne correspondent pas. Veuillez réessayer.");
+          return false; 
+      }
+  }
+</script>
+
+  </body>
+</html>
